@@ -2,7 +2,7 @@
 
 ### Using command line:
 
- 1. Check the git logs using: git log
+ 1. Check the git logs using: **git log --oneline --decorate --all --graph**
  2. There is an issue with our feature branch (the commint from which it was created is no longer the latest commit from master! We should do a rebase in order to move our commits on top of the latest master commit):
     - Step 1: Firstly we need to be on the feature branch. Use the checkout command to accomplish this: **git checkout feature/ro-botzi**
     - Step 2: To fix our commit issues use the rebase command: **git rebase master**
