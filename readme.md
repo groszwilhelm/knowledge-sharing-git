@@ -24,3 +24,14 @@
     - Step 1: Head back into the master branch: **git checkout master**
     - Step 2: **Pay attention!** We now have two commit messages in the feature branch, they are quite ugly and serve no concrete documentation value, we can merge the two commits into a single one that can be more verbose and describe what we have done. We can accomplish this using the merge with the --squash flag: **git merge --squash feature/ro-botzi**
     - Step 3: Now we simply have to provide a new commit message for the squashed commits using: **git commit -m"adds index.js file to serve as an example to the git reabse-merge knowledge sharing"**
+
+### Using VS Code:
+
+> Remove the project directory, and clone the whole project again
+> We will repeate the same stepps as before but using Vs Code commands
+
+  - Seeing git logs use: **F1** to open up the Vs Code command interface, search for **Git: View History**.
+  - Checking out to another branch use: **F1** to open up the Vs Code command interface, search for **Git: Checkout to...** and select the branch you want to checkout to.
+  - Rebasing: Saddly Vs Code doesn't have a Git rebase functionality, we'll use the command line tool.
+  - Merging, use:  **F1** to open up the Vs Code command interface, search for **Git: Merge branch...** and select the branch you want to checkout to.
+  - Merging interactively is not supported by Vs Code, we need to fallback to command line or a tool like sourcetree.
